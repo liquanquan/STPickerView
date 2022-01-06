@@ -32,7 +32,7 @@
 {
     // 1.设置数据的默认值
     _title             = nil;
-    _font              = [UIFont systemFontOfSize:17];
+    _myFont              = [UIFont systemFontOfSize:17];
     _titleColor        = [UIColor blackColor];
     _borderButtonColor = [UIColor colorWithRed:205.0/255 green:205.0/255 blue:205.0/255 alpha:1] ;
     _heightPicker      = 240;
@@ -150,13 +150,11 @@
     _title = title;
     [self.labelTitle setText:title];
 }
-
-- (void)setFont:(UIFont *)font
-{
-    _font = font;
-    [self.buttonLeft.titleLabel setFont:font];
-    [self.buttonRight.titleLabel setFont:font];
-    [self.labelTitle setFont:font];
+- (void)setMyFont:(UIFont *)myFont {
+    _myFont = myFont;
+    [self.buttonLeft.titleLabel setFont:myFont];
+    [self.buttonRight.titleLabel setFont:myFont];
+    [self.labelTitle setFont:myFont];
 }
 
 - (void)setTitleColor:(UIColor *)titleColor

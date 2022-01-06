@@ -37,7 +37,7 @@ typedef NS_ENUM(NSInteger, STPickerContentMode) {
 /** 1.标题，default is nil */
 @property(nullable, nonatomic,copy) NSString          *title;
 /** 2.字体，default is nil (system font 17 plain) */
-@property(null_resettable, nonatomic,strong) UIFont   *font;
+@property(null_resettable, nonatomic,strong) UIFont   *myFont;
 /** 3.字体颜色，default is nil (text draws black) */
 @property(null_resettable, nonatomic,strong) UIColor  *titleColor;
 /** 4.按钮边框颜色颜色，default is RGB(205, 205, 205) */
